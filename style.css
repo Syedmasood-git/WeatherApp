@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #360369;
+  color: white;
+  font-family: Montserrat;
+}
+#land {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#fetchButton {
+  width: 500px;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.header {
+  margin: 30px;
+}
+.header > h1 {
+  font-size: 54px;
+  font-weight: 800;
+}
+.header > p {
+  font-size: 36px;
+  font-weight: 300;
+}
+.latlong {
+  padding: 0px 30px;
+  display: flex;
+  gap: 20px;
+}
+.latlong > div {
+  border-radius: 10px;
+  background: #270846;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.maps {
+  padding: 10px 20px;
+  margin: 10px 15px;
+  height: 80vh;
+}
+#container{
+    background-color: #360369;
+    padding: 0;
+    margin: 0;
+}
+.lower-section{
+    background-color: #fff;
+}
+.data {
+  background-color: white;
+}
+.data > h1 {
+  padding: 20px;
+  margin-left: 15px;
+  color: #360369;
+  background-color: white;
+  font-size: 54px;
+  font-weight: 700;
+}
+.ul-data {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 15px;
+  margin-inline: 25px;
+  padding-bottom: 20px;
+}
+.ul-data > li {
+  padding: 20px 30px;
+  min-width: fit-content;
+  border-radius: 10px;
+  border: 2px solid #360369;
+  /* background: #360369; */
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+    .latlong{
+        flex-wrap: wrap;
+    }
+  }
