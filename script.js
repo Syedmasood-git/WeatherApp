@@ -15,9 +15,9 @@ async function fetchGeoLocation() {
     displayMap(latitude, longitude);
     // console.log(displayMap(latitude,longitude));
     const weatherData = await fetchWeatherData(latitude, longitude);
-    console.log(weatherData);
     const locname=await getLocationName(longitude,latitude);
     getLocationName(locname);
+    console.log(locname);
     displayWeatherData(weatherData,locname);
   } catch (error) {
     if (error.code === 1) {
@@ -28,7 +28,7 @@ async function fetchGeoLocation() {
   }
 }
 async function getLocationName(latitude,longitude){
-    const endpoint=`http://api.openweathermap.org/geo/1.0/reverse?lat=13.0238071&lon=77.5963159&limit=1&appid=6980baf5787780b74808e7d8598bc7f8`
+    const endpoint=`https://api.openweathermap.org/geo/1.0/reverse?lat=13.0238071&lon=77.5963159&limit=1&appid=6980baf5787780b74808e7d8598bc7f8`
     const response=await fetch(endpoint);
     return result=await response.json();
 }
