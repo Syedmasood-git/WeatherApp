@@ -66,8 +66,8 @@ function displayMap(latitude, longitude) {
                         <p>Here is your current location</p>
                     </div>
                     <div class="latlong">
-                        <div class="lat">Lat: ${latitude}</div>
-                        <div class="long">Long: ${longitude}</div>
+                        <div class="lat"><span>Lat: ${latitude}</span></div>
+                        <div class="long"><span>Long: ${longitude}</span></div>
                     </div>
                     <div class="maps">
                         <iframe src="https://maps.google.com/maps?q=${latitude}, ${longitude}&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
